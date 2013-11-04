@@ -47,7 +47,7 @@ if __name__ == '__main__':
 						shutil.move(src,dst)
 						
 				except:
-					print "Error: unable to fecth data"
+					print "Error: no retorna res de la base de dades"
 
 				# disconnect from server
 				db.close()
