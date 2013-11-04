@@ -15,9 +15,9 @@ def dir_list2(dir_name, *args):
     return fileList
 
 if __name__ == '__main__':
-	llista = dir_list2('/home/march/Projectes/python/tempproves/')
-	os.chdir('/home/march/Projectes/python/tempproves/')
-	path = '/home/march/Projectes/python/tempproves/'
+	llista = dir_list2('/home/Projectes/python/tempproves/')
+	os.chdir('/home/Projectes/python/tempproves/')
+	path = '/home/Projectes/python/tempproves/'
 	for f in llista:
 		print f
 		filecurt = f.split("_",1)
@@ -29,7 +29,7 @@ if __name__ == '__main__':
 				codi = int(filecurt[0])
 				print codi
 				# Open database connection
-				db = MySQLdb.connect("localhost","root","xeix30D40","temp" )
+				db = MySQLdb.connect("localhost","root","******","temp" )
 				cursor = db.cursor()
 				sql = "SELECT * FROM proves WHERE codi = '%d'" %(codi)
 				try:
